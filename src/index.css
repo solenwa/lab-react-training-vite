@@ -1,69 +1,131 @@
-:root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
-
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-text-size-adjust: 100%;
-}
-
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
-}
-
 body {
   margin: 0;
+  padding: 0;
   display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
+  flex: column;
+  height: 100vh;
+  width: 100%;
+}
+
+#root {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  width: 100%;
 }
 
 h1 {
   font-size: 3.2em;
   line-height: 1.1;
+  text-align: left;
+  padding-left: 2%;
 }
 
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
+.IdCard {
+  display: flex;
+  line-height: 0.5rem;
+  border: 1px solid black;
+  margin: 2%;
+  text-align: left;
+  width: auto;
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
+.IdCard div {
+  padding: 2%;
+}
+
+.Greetings {
+  border: 1px solid black;
+  margin: 2%;
+  text-align: left;
+  width: auto;
+  padding: 0 2%;
+}
+
+.Random {
+  border: 1px solid black;
+  margin: 2%;
+  text-align: left;
+  width: auto;
+  padding: 0 2%;
+}
+
+.BoxColor {
+  border: 1px solid black;
+  margin: 2%;
+  width: auto;
+  padding: 0 2%;
+}
+
+.CreditCardApp {
+  display: flex;
+  flex-direction: row;
+  padding: 2%;
+}
+
+.CreditCard {
+  width: 25vw;
+  display: flex;
+  flex-direction: column;
+  padding: 2%;
+  margin: 2%;
+  border-radius: 10px;
+}
+
+.bankLogo {
+  width: 20%;
+  align-self: flex-end;
+  margin: 2%;
+}
+
+img {
+  max-width: 100%;
+}
+
+.CreditCard p {
+  margin: 0;
+}
+
+.CreditCard h2 {
+  font-size: 2rem;;
+}
+
+.CreditCardInfo {
+  display: flex;
+  justify-content: center;
+}
+
+.CreditCardInfo p {
+  padding: 0 2%;
+}
+
+.Rating {
+  display: flex;
+  align-self: flex-start;
+  margin: 0 2%;
+}
+
+.DriverCard {
+  background-color: #425CBB;
+  border-radius: 10px;
+  width: auto;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 20vh;
+  margin: 2%;
+  padding: 2% 2% 2% 30%;
+  
+}
+
+.DriverCard img {
+  object-fit: cover;
+  height: 150px;
+  width: 150px;
+}
+
+.DriverCard div {
+  margin: 2%;
+  text-align: left;
 }
